@@ -1,4 +1,24 @@
+import { hashSync } from "bcryptjs";
+
 const sampleData = {
+
+ users: [
+
+    {
+      name: 'john',
+      email: 'admin@example.com',
+      password: hashSync('123456', 10),
+      role: 'admin'
+    },
+    {
+      name: 'jane',
+      email: 'user@example.com',
+      password: hashSync('123456', 10),
+      role: 'user'
+    }
+
+ ], 
+
   products: [
     {
       name: 'Polo Sporting Stretch Shirt',
